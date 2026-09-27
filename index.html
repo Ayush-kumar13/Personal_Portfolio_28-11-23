@@ -3,192 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Ayush Kumar, software developer focused on full-stack web applications, REST APIs, and computer vision." />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | Michael</title>
+    <title>Ayush Kumar | Software Developer</title>
   </head>
   <body>
     <nav>
       <div class="nav__bar">
-        <a href="#"><span class="logo nav__logo">M</span> Michael</a>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-3-line"></i>
-        </div>
+        <a href="#home"><span class="logo nav__logo">AK</span> Ayush Kumar</a>
+        <div class="nav__menu__btn" id="menu-btn"><i class="ri-menu-3-line"></i></div>
       </div>
       <ul class="nav__links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact" class="btn">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Projects</a></li>
       </ul>
-      <a href="#contact" class="btn btn__large">Contact</a>
     </nav>
+
     <header class="section__container header__container" id="home">
-      <div class="header__image">
-        <img src="assets/header.jpg" alt="header" />
-      </div>
+      <div class="header__image"><div class="profile__portrait"><img class="profile__photo" src="assets/ayush-profile.png" alt="Portrait of Ayush Kumar" /></div></div>
       <div class="header__content">
-        <div>
-          <h1>Michael<br />User Interface<br />Designer</h1>
+        <div class="hero__identity">
+          <h1><span class="hero__name">Ayush Kumar</span></h1>
+          <div class="hero__contact" aria-label="Contact links">
+            <a href="mailto:singhayush2999@gmail.com" aria-label="Email Ayush Kumar"><i class="ri-mail-line"></i><span>singhayush2999@gmail.com</span></a>
+            <a href="https://github.com/Ayush-kumar13" aria-label="Ayush Kumar on GitHub"><i class="ri-github-fill"></i><span>GitHub</span></a>
+            <a href="https://www.linkedin.com/in/singh-ayush--/" aria-label="Ayush Kumar on LinkedIn"><i class="ri-linkedin-fill"></i><span>LinkedIn</span></a>
+            <a href="tel:+918287645824" aria-label="Call Ayush Kumar"><i class="ri-phone-line"></i><span>+91 82876 45824</span></a>
+          </div>
+          <p class="hero__role">Software Developer <span aria-hidden="true">|</span> Data Science</p>
         </div>
-        <p class="section__description">
-          I'm a dedicated web developer with a creative flair and a penchant for
-          turning lines of code into captivating online experiences. My journey
-          in the digital realm began years ago, and I've since honed my skills
-          in front-end and back-end development.
-        </p>
-        <div class="header__btn">
-          <button class="btn">Hire Me Now</button>
-        </div>
+        <p class="section__description">Computer Science and Data Science graduate with hands-on experience building full-stack web applications, RESTful APIs, and computer vision projects. Skilled in JavaScript, Python, C++, React.js, FastAPI, PostgreSQL, data structures, and algorithmic problem-solving.</p>
+        <div class="header__btn"><a class="btn" href="assets/ayush-kumar-resume.pdf" download>Download Resume</a></div>
       </div>
     </header>
 
     <section class="section__container about__container" id="about">
-      <div class="about__image">
-        <img src="assets/bg.png" alt="bg" class="about__bg-1" />
-        <img src="assets/bg.png" alt="bg" class="about__bg-2" />
-        <img src="assets/about.jpg" alt="about" class="about__img" />
-      </div>
+      <div class="about__visual"><span class="ri-code-s-slash-line"></span><strong>Build · Learn · Solve</strong><p>Full-stack development<br />Computer vision<br />Data structures & algorithms</p></div>
       <div class="about__content">
-        <h2 class="section__header">Bit About Me</h2>
-        <p class="section__description">
-          A passionate web developer with a creative flair and a knack for
-          turning visions into reality. My journey in web development began with
-          a fascination for coding and design, and it has evolved into a career
-          where I blend aesthetics with functionality. With a focus on user
-          experience and a commitment to staying updated with the latest
-          industry trends, I'm dedicated to creating web solutions that not only
-          meet but exceed expectations.
-        </p>
-        <div class="about__btn">
-          <button class="btn">Download CV</button>
-        </div>
+        <h2 class="section__header">About Me</h2>
+        <p class="section__description">Computer Science and Data Science graduate with hands-on experience in full-stack web development, REST APIs, databases, and computer vision. Skilled in React.js, JavaScript, Python, FastAPI, SQLAlchemy, PostgreSQL, and OpenCV, with experience building and deploying real-world applications. Passionate about problem-solving and developing reliable, user-focused software. Currently seeking Software Development opportunities to contribute my skills and grow as an engineer.</p>
+        <div class="about__facts"><p><strong>Education</strong><br />B.Tech, Computer Science & Engineering (Data Science)<br />KCC Institute of Technology & Management · 2022–2026<br />Dr. A.P.J. Abdul Kalam Technical University</p></div>
       </div>
     </section>
 
-    <section class="section__container service__container" id="service">
-      <h2 class="section__header">My Best Services</h2>
+    <section class="section__container service__container" id="skills">
+      <h2 class="section__header">Technical Skills</h2>
       <div class="service__grid">
-        <div class="service__card">
-          <span><i class="ri-window-fill"></i></span>
-          <h4>Website Design</h4>
-          <p>
-            We craft user-friendly interfaces that engage visitors and help you
-            achieve your online goals with minimum efforts.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-store-line"></i></span>
-          <h4>E-commerce Solutions</h4>
-          <p>
-            We build secure, scalable, and user-centric online stores that
-            enhance the shopping experience and drive conversions.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-smartphone-line"></i></span>
-          <h4>Mobile Development</h4>
-          <p>
-            From iOS to Android, we create apps that deliver seamless
-            performance and keep users coming back for more.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-share-fill"></i></span>
-          <h4>Content Marketing</h4>
-          <p>
-            Our services include creating blog posts, videos, and social media
-            content that drives traffic and engagement.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-seo-line"></i></span>
-          <h4>SEO</h4>
-          <p>
-            Our SEO strategies are tailored to your specific goals, helping you
-            reach your target audience and grow your online presence.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-share-circle-line"></i></span>
-          <h4>Digital Marketing</h4>
-          <p>
-            From pay-per-click (PPC) advertising to social media marketing, we
-            ensure your brand stands out in the crowded digital landscape.
-          </p>
-        </div>
+        <div class="service__card"><span><i class="ri-code-s-slash-line"></i></span><h4>Programming</h4><p>C++, Python, JavaScript, SQL</p></div>
+        <div class="service__card"><span><i class="ri-layout-4-line"></i></span><h4>Frontend</h4><p>HTML5, CSS3, React.js, Tailwind CSS</p></div>
+        <div class="service__card"><span><i class="ri-server-line"></i></span><h4>Backend & APIs</h4><p>FastAPI, SQLAlchemy, REST APIs</p></div>
+        <div class="service__card"><span><i class="ri-database-2-line"></i></span><h4>Databases</h4><p>PostgreSQL, SQLite, Supabase</p></div>
+        <div class="service__card"><span><i class="ri-eye-line"></i></span><h4>Computer Vision</h4><p>OpenCV, Haar Cascade</p></div>
+        <div class="service__card"><span><i class="ri-tools-line"></i></span><h4>Core Concepts & Tools</h4><p>Data Structures & Algorithms, OOP, Git, GitHub, VS Code, API development</p></div>
       </div>
     </section>
 
     <section class="section__container portfolio__container" id="portfolio">
-      <h2 class="section__header">My Portfolio</h2>
-      <p class="section__description">
-        Explore a showcase of my diverse projects, demonstrating my skills in
-        web development, design, and beyond. Each project reflects my passion
-        for creating impactful and innovative digital experiences.
-      </p>
+      <h2 class="section__header">Selected Projects</h2>
+      <p class="section__description">A few projects where I’ve applied full-stack development, computer vision, and responsive UI skills.</p>
       <div class="portfolio__grid">
-        <div class="portfolio__card">
-          <img src="assets/project-1.jpg" alt="portfolio" />
-        </div>
-        <div class="portfolio__card">
-          <img src="assets/project-2.jpg" alt="portfolio" />
-        </div>
-        <div class="portfolio__card">
-          <img src="assets/project-3.jpg" alt="portfolio" />
-        </div>
-        <div class="portfolio__card">
-          <img src="assets/project-4.jpg" alt="portfolio" />
-        </div>
-        <div class="portfolio__card">
-          <img src="assets/project-5.jpg" alt="portfolio" />
-        </div>
-        <div class="portfolio__card">
-          <img src="assets/project-6.jpg" alt="portfolio" />
-        </div>
+        <article class="portfolio__card project__card"><span class="project__icon ri-shield-star-line"></span><h3>Digital Heroes</h3><p class="project__stack">React.js · FastAPI · SQLAlchemy · PostgreSQL · Supabase · Tailwind CSS</p><p>Built a real-world charity and rewards platform with user authentication, score management, automated draws, winner calculation, Stripe payment and subscription integration, and an admin dashboard.</p><a class="project__link" href="https://github.com/Ayush-kumar13/digital-heroes" target="_blank" rel="noopener noreferrer">View on GitHub <i class="ri-arrow-right-up-line"></i></a></article>
+        <article class="portfolio__card project__card"><span class="project__icon ri-task-line"></span><h3>Task Manager</h3><p class="project__stack">React.js · FastAPI · SQLAlchemy · SQLite</p><p>Built a full-stack task management app with RESTful APIs and CRUD operations for reliable task management.</p><a class="project__link" href="https://github.com/Ayush-kumar13/TASK-Manager" target="_blank" rel="noopener noreferrer">View on GitHub <i class="ri-arrow-right-up-line"></i></a></article>
+        <article class="portfolio__card project__card"><span class="project__icon ri-emotion-line"></span><h3>Real-Time Face, Eye & Smile Detection</h3><p class="project__stack">Python · OpenCV</p><p>Created a real-time computer vision application using Haar Cascade for face, eye, and smile detection with a webcam input.</p><a class="project__link" href="https://github.com/Ayush-kumar13/OPEN-CV" target="_blank" rel="noopener noreferrer">View on GitHub <i class="ri-arrow-right-up-line"></i></a></article>
       </div>
-      <div class="portfolio__banner">
-        <div class="portfolio__banner__card">
-          <span><i class="ri-macbook-line"></i></span>
-          <h4>150+ Projects</h4>
-          <p>Delivered</p>
-        </div>
-        <div class="portfolio__banner__card">
-          <span><i class="ri-discuss-line"></i></span>
-          <h4>1500+ Happy</h4>
-          <p>Customers</p>
-        </div>
-        <div class="portfolio__banner__card">
-          <span><i class="ri-heart-fill"></i></span>
-          <h4>2700+ Lovely</h4>
-          <p>Feedbacks</p>
-        </div>
-      </div>
+      <div class="portfolio__banner"><div class="portfolio__banner__card"><span><i class="ri-graduation-cap-line"></i></span><h4>B.Tech · 2022–2026</h4><p>Computer Science & Engineering (Data Science)</p></div><div class="portfolio__banner__card"><span><i class="ri-award-line"></i></span><h4>Web Development Training</h4><p>Naviotech Solution Pvt. Ltd. · Jul–Aug 2026</p><a class="certificate__link" href="assets/naviotech-web-development-certificate.jpg" target="_blank" rel="noopener noreferrer">View certificate <i class="ri-arrow-right-up-line"></i></a></div><div class="portfolio__banner__card"><span><i class="ri-book-open-line"></i></span><h4>C++ DSA Training</h4><p>Coding Blocks</p></div></div>
     </section>
 
-    <section class="section__container contact__container" id="contact">
-      <div class="logo">M</div>
-      <h2 class="section__header">Let's Talk With Me!</h2>
-      <p class="section__description">
-        An open invitation to connect, and exploring collaborative opportunities
-        on my personal portfolio website.
-      </p>
-      <div class="contact__socials">
-        <a href="#"><i class="ri-twitter-fill"></i></a>
-        <a href="#"><i class="ri-linkedin-fill"></i></a>
-        <a href="#"><i class="ri-behance-fill"></i></a>
-        <a href="#"><i class="ri-dribbble-line"></i></a>
-        <a href="#"><i class="ri-pinterest-line"></i></a>
-      </div>
-    </section>
-    <footer class="footer">
-      Copyright © 2023 Web Design Mastery. All rights reserved.
-    </footer>
-
+    <footer class="footer">© 2026 Ayush Kumar · Software Developer</footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
   </body>

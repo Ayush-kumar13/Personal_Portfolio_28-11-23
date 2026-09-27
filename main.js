@@ -17,50 +17,33 @@ navLinks.addEventListener("click", (e) => {
   menuBtnIcon.setAttribute("class", "ri-menu-3-line");
 });
 
-const scrollRevealOption = {
-  distance: "50px",
-  origin: "bottom",
-  duration: 1000,
-};
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// header container
-ScrollReveal().reveal(".header__content h1", {
-  ...scrollRevealOption,
-});
+if (!prefersReducedMotion) {
+  const reveal = ScrollReveal({
+    distance: "70px",
+    duration: 1200,
+    easing: "cubic-bezier(0.5, 0, 0, 1)",
+    reset: true,
+  });
 
-ScrollReveal().reveal(".header__content .section__description", {
-  ...scrollRevealOption,
-  delay: 500,
-});
+  reveal.reveal(".header__image .profile__portrait", { origin: "right", delay: 100 });
+  reveal.reveal(".hero__name", { origin: "left", delay: 250 });
+  reveal.reveal(".hero__contact", { origin: "left", delay: 450 });
+  reveal.reveal(".hero__role", { origin: "left", delay: 600 });
+  reveal.reveal(".header__content > .section__description", { origin: "bottom", delay: 750 });
+  reveal.reveal(".header__btn", { origin: "bottom", delay: 900 });
 
-ScrollReveal().reveal(".header__content .header__btn", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
+  reveal.reveal(".about__visual", { origin: "left" });
+  reveal.reveal(".about__content .section__header", { origin: "right" });
+  reveal.reveal(".about__content .section__description", { origin: "right", delay: 200 });
+  reveal.reveal(".about__facts", { origin: "bottom", delay: 350 });
 
-// about container
-ScrollReveal().reveal(".about__content .section__header", {
-  ...scrollRevealOption,
-});
+  reveal.reveal(".service__container .section__header", { origin: "bottom" });
+  reveal.reveal(".service__card", { origin: "bottom", interval: 140, delay: 150 });
 
-ScrollReveal().reveal(".about__content .section__description", {
-  ...scrollRevealOption,
-  delay: 500,
-});
-
-ScrollReveal().reveal(".about__content .about__btn", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-
-// service container
-ScrollReveal().reveal(".service__card", {
-  ...scrollRevealOption,
-  interval: 500,
-});
-
-// portfolio container
-ScrollReveal().reveal(".portfolio__card", {
-  duration: 1000,
-  interval: 500,
-});
+  reveal.reveal(".portfolio__container > .section__header", { origin: "bottom" });
+  reveal.reveal(".portfolio__container > .section__description", { origin: "bottom", delay: 150 });
+  reveal.reveal(".portfolio__card", { origin: "bottom", interval: 180, delay: 200 });
+  reveal.reveal(".portfolio__banner__card", { origin: "bottom", interval: 140, delay: 150 });
+}
